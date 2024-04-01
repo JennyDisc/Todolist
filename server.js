@@ -7,7 +7,16 @@ const errorHeadle = require('./errorHeadle');
 //         id: uuidv4()
 //     }
 // ]
-const todos = [];
+const todos = [
+    {
+        title: '完成預習影音課程',
+        id: uuidv4()
+    },
+    {
+        title: '傍晚運動30分鐘',
+        id: uuidv4()
+    }
+];
 
 const requestListener = (req, res) => {
     const headers = {
