@@ -130,7 +130,7 @@ const requestListener = (req, res) => {
                 if (title !== undefined && idIndex !== -1) {
                     // 更新陣列內指定的資料
                     todos[idIndex].title = title;
-                    res.writeHead(200, Headers);
+                    res.writeHead(200, headers);
                     res.write(JSON.stringify({
                         "status": 'success',
                         "data": todos
